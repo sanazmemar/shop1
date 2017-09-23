@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 header {
@@ -51,14 +51,14 @@ header {
       padding-top: 40px; }
 
 .main {
-  width: 1280px;
-  padding: 0 45px;
-  margin: 0 auto; }
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid #e8e8e8; }
   .main a {
     text-decoration: none; }
   .main .sidebar-menu {
-    width: 20%;
-    float: left; }
+    width: 20%; }
     .main .sidebar-menu .navbar {
       list-style: none;
       padding: 0 40px 0 0; }
@@ -86,3 +86,7 @@ header {
         text-align: center; }
       .main .product .num .price {
         text-align: center; }
+    .main .product .product-content {
+      font-family: TimesNewRoman;
+      font-weight: 400;
+      padding-bottom: 50px; }
