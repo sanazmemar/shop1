@@ -1,6 +1,7 @@
 body{
 margin: 0px;
   padding: 0px;
+  font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 header{
   max-width: 1280px;
@@ -12,13 +13,14 @@ margin: 0 auto;
   background-color: transparent;
   display: flex;
 flex-direction: row;
-border-bottom: 1px solid #999;
+border-bottom: 1px solid #e8e8e8;
 .nav-search{
   width:20%;
   .navbar-form{
     display: flex;
 flex-direction: row;
 margin-top: 0.8em;
+
     input{
       padding: 8px;
       border: none;
@@ -48,12 +50,66 @@ a{
 }
 }
 .banner{
+  height: 140px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25px;
   .logo{
     float: left;
+    padding-top: 40px;
+  }
+  .header-text{
+    padding-top: 40px;
   }
 }
+}
+.main{
+  width:1280px;
+  padding: 0 45px;
+  margin: 0 auto;
+  a{
+    text-decoration: none;
+  }
+  .sidebar-menu{
+    width:20%;
+    float: left;
+    .navbar{
+      list-style: none;
+          padding: 0 40px 0 0;
+      li{
+        padding: 15px 0;
+        border-bottom: 1px solid #e8e8e8;
+        .dropdown-menu{
+        display: none;
+        list-style: none;
+        padding: 5px 0 15px;
+        }
+      }
+      li:first-child{
+        border-top: 1px solid #e8e8e8;
+      }
+    }
+
+
+  }
+  .product{
+    width:80%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .num{
+      width: 33.33333%;
+      padding-bottom: 50px;
+      .num-pic:hover{
+        opacity: 0.7;
+      }
+      .pic-title{
+        text-align: center;
+      }
+      .price{
+  text-align: center;
+      }
+    }
+  }
 }

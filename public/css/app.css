@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 header {
   max-width: 1280px;
@@ -12,7 +13,7 @@ header {
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #999; }
+    border-bottom: 1px solid #e8e8e8; }
     header .topnav .nav-search {
       width: 20%; }
       header .topnav .nav-search .navbar-form {
@@ -39,9 +40,49 @@ header {
         text-decoration: none;
         padding: 0 15px; }
   header .banner {
+    height: 140px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 25px; }
+    justify-content: space-between; }
     header .banner .logo {
-      float: left; }
+      float: left;
+      padding-top: 40px; }
+    header .banner .header-text {
+      padding-top: 40px; }
+
+.main {
+  width: 1280px;
+  padding: 0 45px;
+  margin: 0 auto; }
+  .main a {
+    text-decoration: none; }
+  .main .sidebar-menu {
+    width: 20%;
+    float: left; }
+    .main .sidebar-menu .navbar {
+      list-style: none;
+      padding: 0 40px 0 0; }
+      .main .sidebar-menu .navbar li {
+        padding: 15px 0;
+        border-bottom: 1px solid #e8e8e8; }
+        .main .sidebar-menu .navbar li .dropdown-menu {
+          display: none;
+          list-style: none;
+          padding: 5px 0 15px; }
+      .main .sidebar-menu .navbar li:first-child {
+        border-top: 1px solid #e8e8e8; }
+  .main .product {
+    width: 80%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main .product .num {
+      width: 33.33333%;
+      padding-bottom: 50px; }
+      .main .product .num .num-pic:hover {
+        opacity: 0.7; }
+      .main .product .num .pic-title {
+        text-align: center; }
+      .main .product .num .price {
+        text-align: center; }
