@@ -90,3 +90,59 @@ header {
       font-family: TimesNewRoman;
       font-weight: 400;
       padding-bottom: 50px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 0 auto; }
+  footer .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 30px 0 50px; }
+    footer .footer-content .links {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      footer .footer-content .links a {
+        text-decoration: none;
+        padding: 5px 0; }
+    footer .footer-content .subscribe {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      footer .footer-content .subscribe a {
+        text-decoration: none;
+        padding: 5px 0 15px; }
+      footer .footer-content .subscribe .email-subscribe {
+        display: flex;
+        flex-direction: row; }
+        footer .footer-content .subscribe .email-subscribe input {
+          width: 80%;
+          padding: 12px;
+          background-color: #e8e8e8;
+          border: none; }
+        footer .footer-content .subscribe .email-subscribe button {
+          width: 20%;
+          background-color: #333;
+          color: #fff;
+          border: none; }
+  footer .copy-right {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0; }
+    footer .copy-right-text {
+      width: 50%; }
+    footer .copy-right-icon {
+      width: 50%; }
+      footer .copy-right-icon .payment-icons {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        list-style: none; }
+        footer .copy-right-icon .payment-icons li {
+          padding: 0 5px; }
+    footer .copy-right a {
+      text-decoration: none; }
