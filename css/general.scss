@@ -1,0 +1,59 @@
+body{
+margin: 0px;
+  padding: 0px;
+}
+header{
+  max-width: 1280px;
+margin: 0 auto;
+  padding: 0 45px;
+  border-top: 5px solid #333;
+  .topnav {
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+flex-direction: row;
+border-bottom: 1px solid #999;
+.nav-search{
+  width:20%;
+  .navbar-form{
+    display: flex;
+flex-direction: row;
+margin-top: 0.8em;
+    input{
+      padding: 8px;
+      border: none;
+    }
+    .btn{
+      background-color: transparent;
+    border: none;
+    }
+  }
+}
+.center-nav{
+  float: left;
+width: 40%;
+a{
+  text-decoration: none;
+  padding: 0 15px;
+}
+}
+.right-nav{
+  width: 40%;
+float: right;
+text-align: right;
+a{
+  text-decoration: none;
+  padding: 0 15px;
+}
+}
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+  .logo{
+    float: left;
+  }
+}
+}

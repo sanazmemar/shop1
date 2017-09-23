@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 45px;
+  border-top: 5px solid #333; }
+  header .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #999; }
+    header .topnav .nav-search {
+      width: 20%; }
+      header .topnav .nav-search .navbar-form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.8em; }
+        header .topnav .nav-search .navbar-form input {
+          padding: 8px;
+          border: none; }
+        header .topnav .nav-search .navbar-form .btn {
+          background-color: transparent;
+          border: none; }
+    header .topnav .center-nav {
+      float: left;
+      width: 40%; }
+      header .topnav .center-nav a {
+        text-decoration: none;
+        padding: 0 15px; }
+    header .topnav .right-nav {
+      width: 40%;
+      float: right;
+      text-align: right; }
+      header .topnav .right-nav a {
+        text-decoration: none;
+        padding: 0 15px; }
+  header .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px; }
+    header .banner .logo {
+      float: left; }
