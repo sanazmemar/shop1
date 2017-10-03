@@ -5,6 +5,10 @@
   .shopping-products{
     display: flex;
     flex-direction: row;
+    .shopping-product{
+      display: flex;
+      flex-direction: row;
+    }
   }
   .related-products{
     display: flex;
@@ -13,6 +17,14 @@
     .list-related-products{
       display: flex;
       flex-direction: row;
+      .num{
+        .pic-title{
+          text-align: center;
+        }
+        .price{
+          text-align: center;
+        }
+      }
     }
     padding-bottom: 30px;
   }

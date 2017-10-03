@@ -155,6 +155,9 @@ footer {
   .product1 .shopping-products {
     display: flex;
     flex-direction: row; }
+    .product1 .shopping-products .shopping-product {
+      display: flex;
+      flex-direction: row; }
   .product1 .related-products {
     display: flex;
     flex-direction: column;
@@ -163,3 +166,7 @@ footer {
     .product1 .related-products .list-related-products {
       display: flex;
       flex-direction: row; }
+      .product1 .related-products .list-related-products .num .pic-title {
+        text-align: center; }
+      .product1 .related-products .list-related-products .num .price {
+        text-align: center; }
