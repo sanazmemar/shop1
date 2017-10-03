@@ -104,108 +104,55 @@
 		</a>
 	</div>
 </div>
-		<div class="product">
-					<div class="num">
-						<a href="shopping.html" class="num-pic">
-				<img  src="public/images/pic1.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
+		<div class="product1">
+					<div class="shopping-products">
+					  <div class="shopping-product">
+					    <img src="public/images/pic1.jpg"></img>
+              <form method="post" class="form-product">
+              <button id="add-to-cart" type="submit">Add To Cart</button>
+            </form>
+					  </div>
+            <div class="product-information"></div>
 					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic2.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic3.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic4.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic5.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic6.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic7.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic8.jpg"></a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="num">
-						<a href="" class="num-pic">
-				<img  src="public/images/pic9.jpg">
-			</a>
-						<div class="pic-title">
-							<a href="">Blue ripped jeans</a>
-						</div>
-						<div class="price">
-							<span> $99.00</span>
-						</div>
-					</div>
-					<div class="product-content">
-						<h3>Theme documentation and support</h3>
-						<p>You can find the documentation for this theme <span><a href="">right here</a></span>. Since this is an official Shopify theme you can always ask <span><a href="">one of our gurus.</a><span> </p>
-		<div class="address">
-				<p>1 Main Street</p>
-				<p>Los Angeles, California,</p>
-				<p>90210 USA</p>
-				<p>Phone: (555) 867 5309</p>
+          <div class="text-product">
+            <p>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at 9 ways to write compelling product descriptions. In Theme Settings you can also change the product description position to the right of the product images.</p>
+          </div>
+					<div class="related-products">
+            <p>You might also like</p>
+            <div class="list-related-products">
+              <div class="num">
+    						<a href="" class="num-pic">
+    				<img  src="public/images/pic2.jpg"></a>
+    						<div class="pic-title">
+    							<a href="">Blue ripped jeans</a>
+    						</div>
+    						<div class="price">
+    							<span> $99.00</span>
+    						</div>
+    					</div>
+              <div class="num">
+                <a href="" class="num-pic">
+            <img  src="public/images/pic2.jpg"></a>
+                <div class="pic-title">
+                  <a href="">Blue ripped jeans</a>
+                </div>
+                <div class="price">
+                  <span> $99.00</span>
+                </div>
+              </div>
+              <div class="num">
+                <a href="" class="num-pic">
+            <img  src="public/images/pic2.jpg"></a>
+                <div class="pic-title">
+                  <a href="">Blue ripped jeans</a>
+                </div>
+                <div class="price">
+                  <span> $99.00</span>
+                </div>
+              </div>
+            </div>
 			</div>
-			</div>
+</div>
 </div>
 </div>
 <footer>
@@ -252,6 +199,31 @@
 		</div>
 	</div>
 </footer>
+<script>
+$('#add-to-cart').click(function(){
+     addItemToCart(949931647 , 1, "1", "Months", "491")
+})
+</script>
+<script>
+function addItemToCart (variant_id, quantity, shipping_interval_frequency, shipping_interval_unit_type, subscription_id) {
+  data = {
+      "quantity": quantity,
+      "id": variant_id,
+      "properties[shipping_interval_frequency]": shipping_interval_frequency,
+	"properties[shipping_interval_unit_type]": shipping_interval_unit_type,
+	"properties[subscription_id]": subscription_id
+    }
+  jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+          window.location.href = '/cart';
+      }
+  });
+}
+</script>
 </body>
 
 </html>

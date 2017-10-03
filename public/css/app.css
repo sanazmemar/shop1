@@ -76,7 +76,8 @@ header {
     float: right;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    overflow: hidden; }
     .main .product .num {
       width: 33.33333%;
       padding-bottom: 50px; }
@@ -146,3 +147,19 @@ footer {
           padding: 0 5px; }
     footer .copy-right a {
       text-decoration: none; }
+
+.product1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%; }
+  .product1 .shopping-products {
+    display: flex;
+    flex-direction: row; }
+  .product1 .related-products {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 30px; }
+    .product1 .related-products .list-related-products {
+      display: flex;
+      flex-direction: row; }
